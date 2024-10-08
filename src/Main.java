@@ -2,6 +2,20 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     /**
+     * Permet de trouver l'index d'un nombre dans un tableau
+     * @param tab un tableau
+     * @param a un entier a trouver dans le tab
+     * @return l'index de l'entier ou -1 si l'entier n'est pas dans le tab
+     */
+    static int rechercheBinaire(int [] tab,int  a){
+        for (int i=0; i<tab.length; i++){
+            if (tab[i]==a){
+                return i;
+            }
+        }
+        return -1;
+    }
+    /**
      * Renvoie boolean si une valeur du tableau<10
      * @param tab a tab
      * @return boolean if i<10
